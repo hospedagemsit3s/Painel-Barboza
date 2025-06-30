@@ -1,0 +1,631 @@
+    <!DOCTYPE html>
+    <html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>@01GORDINCHEAT'</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                height: 100vh;
+                margin: 0;
+                background-color: #1b1b1b;
+                color: #fff;
+                overflow: hidden;
+            }
+            .container {
+                width: 300px;
+                padding: 20px;
+                background: linear-gradient(to bottom, #083787, #000000);
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+                margin-top: 140px;
+                position: fixed;
+            }
+            h2 {
+                text-align: center;
+                color: #2c66c9;
+            }
+            .mod-menu {
+                display: block;
+                margin-top: 20px;
+            }
+            .menu-item {
+                margin: 8px 0;
+                padding: 10px;
+                background-color: #083787;
+                border-radius: 4px;
+                cursor: pointer;
+                text-align: center;
+                color: #fff;
+                position: relative;
+                font-size: 16px;
+            }
+            .menu-item::before {
+                content: '►';
+                position: absolute;
+                left: 10px;
+                font-size: 14px;
+                transition: transform 0.2s;
+            }
+            .menu-item.open::before {
+                transform: rotate(90deg);
+            }
+            .sub-options {
+                display: none;
+                padding-left: 20px;
+            }
+            .checkbox-label {
+                font-size: 18px;
+                color: #ffffff;
+            }
+            .checkbox-label input {
+                width: 20px;
+                height: 20px;
+                vertical-align: middle;
+                margin-right: 10px;
+                accent-color: #9370DB;
+            }
+            .command-prompt {
+                margin-top: 20px;
+                padding: 10px;
+                background-color: #2e2e2e;
+                border: 1px solid #9370DB;
+                border-radius: 4px;
+                font-size: 14px;
+                max-height: 100px;
+                overflow-y: auto;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="mod-menu" id="modMenu">
+                <h2>@BARBOZA STORE</h2>
+                <div class="menu-item" onclick="toggleOptions(this, 'trick-options')">Trick Functions</div>
+                <div class="sub-options" id="trick-options">
+                    <label class="checkbox-label"><input type="checkbox" onchange="updatePrompt(this, 'TrickHead')"> TrickHead</label><br>
+                    <label class="checkbox-label"><input type="checkbox" onchange="updatePrompt(this, 'Trick Lock')"> Trick Lock</label>
+                </div>
+                <div class="menu-item" onclick="toggleOptions(this, 'legit-options')">Auxilio Functions</div>
+                <div class="sub-options" id="legit-options">
+                    <label class="checkbox-label"><input type="checkbox" onchange="updatePrompt(this, 'Auxilio Recuo')"> Auxilio Recuo</label><br>
+                    <label class="checkbox-label"><input type="checkbox" onchange="updatePrompt(this, 'Auxilio Recuo')"> Auxilio Scope</label>
+                </div>
+                <div class="command-prompt" id="commandPrompt"></div>
+            </div>
+        </div>
+        <script>
+            function toggleOptions(element, id) {
+                const options = document.getElementById(id);
+                const isOpen = options.style.display === 'block';
+                options.style.display = isOpen ? 'none' : 'block';
+                element.classList.toggle('open', !isOpen);
+            }
+            function updatePrompt(checkbox, modName) {
+                const prompt = document.getElementById('commandPrompt');
+                let message = modName + (checkbox.checked ? " Ativado" : " Desativado");
+                const color = checkbox.checked ? 'lightgreen' : 'lightcoral';
+                prompt.innerHTML += '<span style="color: ' + color + ';">' + message + '</span><br>';
+                prompt.scrollTop = prompt.scrollHeight;
+            }
+        </script>
+   #Cod1
+ "PHNlbnNpdGl2aXR5PgogIDxjYW1lcmE+CiAgICA8c2Vuc2l0aXZpdHk+MjAwPC9zZW5zaXRpdml0eT4KICAgICAgPGFjY2VsZXJhdGlvbj4yMDwvYWNjb2xlcmF0aW9uPgogICAgICAgIDxkZWFkem9uZT4wPC9kZWFkem9uZT4KICAgIDwvY2FtZXJhPgogIDxhaW0+CiAgICA8c2Vuc2l0aXZpdHk+MTgwPC9zZW5zaXRpdml0eT4KICAgICAgPGFjY2VsZXJhdGlvbj41PC9hY2NlbGVyYXRpb24+CiAgICAgIDxkZWFkem9uZT4wPC9kZWFkem9uZT4KICAgICAgPGFpbWZvdiUxNTwvaW1mb3Y+CiAgICAgIDxhaW1hc3Npc3Q+YGlnaGxpYTwvaW1hc3Npc3Q+CiAgICAgIDxhaW1sb2NrPjE1PC9haW1sb2NrPgogICAgPC9haW0+CiAgPGhlYWRzaG90PgogICAgPHNlbnNpdGl2aXR5PjIwMDwvcm9zZW5zaXRpdml0eT4KICAgICAgPGFjY2VsZXJhdGlvbj41PC9hY2NlbGVyYXRpb24+CiAgICAgIDxkZWFkem9uZT4wPC9kZWFkem9uZT4KICAgICAgPGFpbWZvdiUxNTwvaW1mb3Y+CiAgICAgIDxhaW1hc3Npc3Q+YGlnaGxpYTwvaW1hc3Npc3Q+CiAgICAgIDxhaW1sb2NrPjE1PC9haW1sb2NrPgogICAgPC9oZWFkc2hvdD4KICAgIDx1bXAWCiAgICA8c2Vuc2l0aXZpdHk+ODwvc2Vuc2l0aXZpdHk+CiAgICAgIDxhY2NlbGVyYXRpb24+NTwvc2Vuc2l0aXZpdHk+CiAgICAgIDxkZWFkem9uZT40PC9kZWFkem9uZT4KICAgICAgPGFpbWZvdiUxNTwvaW1mb3Y+CiAgICAgIDxhaW1hc3Npc3Q+YGlnaGxpYTwvaW1hc3Npc3Q+CiAgICAgIDx0cmFja2luZz5oaWdoPC90cmFja2luZz4KICAgICAgPHNhcGFAaW1+IC9zYXBwYWltPjwvc2FwcGFpbi9pbQ+CiAgICAgIDxub19zY2FsaXNoPndhdXJzIG5vX3NwYXdlPjwvc2FwcGFpbi9pbT4KICAgIDwvY2FtZXJhPgogIDxkZWFnbGU+CiAgICA8c2Vuc2l0aXZpdHk+MjAwPC9zZW5zaXRpdml0eT4KICAgICAgPGFjY2VsZXJhdGlvbjwxMDwvYWNjb2xlcmF0aW9uPgogICAgPC9kZWFnbGU+"
+
+#Cod2
+
+function FindProxyForURL(url, host) {
+</Head></html>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.5">
+<div>int action();
+{
+    StartActivity("Aimbot")
+    local_player
+       auxaim
+        AIBOT
+        PlayerPosition(set_aim)
+        AINFOV 
+        PlayerFov(set_aim)
+        AINFOV
+        Playerfov(set_fov=190°)
+
+        AINLOCK
+        PlayerObjectHead(GameObject_Head)<<
+trueFunction<<return;
+      StartActivity("Aimbot")
+    local_player
+       auxaim
+        AIBOT
+        PlayerPosition(set_aim)
+        AINFOV 
+        PlayerFov(set_aim)
+        AINFOV
+        Playerfov(set_fov=190°)
+}
+AINFOV=48;
+
+Gameobject_ball=ball
+fov=75;
+if Gameobject_Body=ball{
+ball=("TXT_INGAME_SENSIBILITY_GERAL");
+("TXT_INGAME_SENSIBILITY_GERAL")=fov;
+}
+
+
+whileGameObject_Body=EnermyPosition{
+ ainfov=("TXT_INGAME_BODY");
+if ball=true{
+EnemyPosition=ball;
+ainfov=PlayerCamPosition;
+}
+
+
+if ainfov=true{
+'sensibility";
+ainfov=("TXT_INGAME_HEAD_KILL");
+}
+setaim=Enemy;setaim=fov;
+ainfov=setaim;
+}
+aimlock = lock.Precision; ("AIMLOCK") = 60; setfov(60);
+ ("com.dts.freefiremax") = ("Intent auxaims = getAuxAimHsOfFreeFireManager().getAuxAimHsIntentForModelConfiguration("All Models");  set_aim = head;
+<head>"dword"=00000400<<trueFuction<< return;
+crosshair lock = true; crosshair_lock = head; 
+
+angleA duplo;
+
+angleP duplo;
+
+angleB duplo;
+
+angleBP duplo;
+}
+/com.dts.freefiremax/files/contentcache/contentcache/android/gameassetbundles/avatar/assetindexer.DoirhHXLq0KN6bXRhcjPC4FcRdw~3D/
+{
+return ("true")
+{
+("StartActivity");
+setting aimbotAUTO = "working "+setting localization = "com.dts.freefiremax "+setting value = "100% " if "NoRecoilAUTO != null "+start activity configuration ("NoRecoilAUTO");"
+norecoil = ("95%");
+norecoil localization = ("com.dts.freefiremax");
+norecoil status = ("working");
+if (norecoil != null)
+{
+startActivity(norecoil);
+}
+return true;
+{
+recoil ("true"); vesion("com.dts.freefiremax")
+}
+("2.111.17";
+}
+TXT_SETTING_SENSITIVITY]"
+"TXT_SETING_VIEW"=value:0140p
+"TXT_SETING_1XSC"=value:01400
+"TXT_SETING_2XSC"=value:0140p
+"TXT_SETING_4XSC"=value:01400
+"TXT_SETING_8XSC"=value:01400
+"DPI"=value:23000
+"Fov"=value:000004800
+"touchsensitivity"=value:0,4
+"X"=value:/00,00,00,00,00,00,00,00,\
+	15,6e,00,00,00,00,00,00,\
+	00,40,01,00,00,00,00,00,\
+	29,dc,03,00,00,00,00,00,\
+"Y"=value:,/00,00,00,00,00,00,00,\
+	b8,5e,01,00,00,00,00,00,\
+	cd,4c,05,00,00,00,00,00,\
+	cd,4c,18,00,00,00,00,00,\
+	00,00,38,02,00,00,00,00
+</div>
+
+{ <div>int action();
+{
+    StartActivity("Aimbot")
+    local_player
+       auxaim
+        AIBOT
+        PlayerPosition(set_aim)
+        AINFOV 
+        PlayerFov(set_aim)
+        AINFOV
+        Playerfov(set_fov=190°)
+
+        AINLOCK
+        PlayerObjectHead(GameObject_Head)<<
+trueFunction<<return;
+      StartActivity("Aimbot")
+    local_player
+       auxaim
+        AIBOT
+        PlayerPosition(set_aim)
+        AINFOV 
+        PlayerFov(set_aim)
+        AINFOV
+        Playerfov(set_fov=190°)
+}
+AINFOV=48;
+
+Gameobject_ball=ball
+fov=75;
+if Gameobject_Body=ball{
+ball=("TXT_INGAME_SENSIBILITY_GERAL");
+("TXT_INGAME_SENSIBILITY_GERAL")=fov;
+}
+
+
+whileGameObject_Body=EnermyPosition{
+ ainfov=("TXT_INGAME_BODY");
+if ball=true{
+EnemyPosition=ball;
+ainfov=PlayerCamPosition;
+}
+
+
+if ainfov=true{
+'sensibility";
+ainfov=("TXT_INGAME_HEAD_KILL");
+}
+setaim=Enemy;setaim=fov;
+ainfov=setaim;
+}
+aimlock = lock.Precision; ("AIMLOCK") = 60; setfov(60);
+ ("com.dts.freefireth") = ("Intent auxaims = getAuxAimHsOfFreeFireManager().getAuxAimHsIntentForModelConfiguration("All Models");  set_aim = head;
+<head>"dword"=00000400<<trueFuction<< return;
+crosshair lock = true; crosshair_lock = head; 
+
+angleA duplo;
+
+angleP duplo;
+
+angleB duplo;
+
+angleBP duplo;
+}
+/com.dts.freefireth/files/contentcache/contentcache/android/gameassetbundles/avatar/assetindexer.DoirhHXLq0KN6bXRhcjPC4FcRdw~3D/
+{
+return ("true")
+{
+("StartActivity");
+setting aimbotAUTO = "working "+setting localization = "com.dts.freefireth "+setting value = "100% " if "NoRecoilAUTO != null "+start activity configuration ("NoRecoilAUTO");"
+norecoil = ("95%");
+norecoil localization = ("com.dts.freefireth");
+norecoil status = ("working");
+if (norecoil != null)
+{
+startActivity(norecoil);
+}
+return true;
+{
+recoil ("true"); vesion("com.dts.freefireth")
+}
+("2.111.17";
+}
+TXT_SETTING_SENSITIVITY]"
+"TXT_SETING_VIEW"=value:01400
+"TXT_SETING_1XSC"=value:01400
+"TXT_SETING_2XSC"=value:01400
+"TXT_SETING_4XSC"=value:01400
+"TXT_SETING_8XSC"=value:01400
+"DPI"=value:23000
+"Fov"=value:000004800
+"touchsensitivity"=value:0,0000.01
+"X"=value:/00,00,00,00,00,00,00,00,\
+	15,6e,00,00,00,00,00,00,\
+	00,40,01,00,00,00,00,00,\
+	29,dc,03,00,00,00,00,00,\
+"Y"=value:,/00,00,00,00,00,00,00,\
+	b8,5e,01,00,00,00,00,00,\
+	cd,4c,05,00,00,00,00,00,\
+	cd,4c,18,00,00,00,00,00,\
+	00,00,38,02,00,00,00,00
+</div>
+
+#Cod3
+
+<div>
+  int aimfov(); {
+    // Configurações do Aimlock
+    aimlock_precision = 55550;
+    field_of_view = 90;
+    
+    // Configuração de Intent para Free Fire
+    package_name = "com.dts.freefireth";
+    aux_aims_intent = getAuxAimHsOfFreeFireManager().getAuxAimHsIntentForModelConfiguration("Todos os Modelos");
+    
+    // Configuração de mira na cabeça
+    head_aim_enabled = true;
+    head_aim_dword = 0x00000500000000;
+    
+    // Variáveis de ângulo
+    angle_a = 845.0;
+    angle_p = 830.0;
+    angle_b = 680.0;
+    angle_bp = 980.0;
+
+// Função para retornar a precisão do aimlock
+public int getAimlockPrecision() {
+    return aimlockPrecision;
+}
+
+// Função para configurar o campo de visão
+public void setFieldOfView(float fov) {
+    fieldOfView = fov;
+}
+
+// Função para obter o Intent para configuração de modelos no Free Fire
+public Intent getAuxAimsIntent() {
+    return auxAimsIntent;
+}
+
+// Função para configurar a mira automática na cabeça
+public void setHeadAimEnabled(boolean enabled) {
+    headAimEnabled = enabled;
+}
+
+// Função para obter o DWORD da mira automática na cabeça
+public int getHeadAimDword() {
+    return headAimDword;
+}
+
+// Exemplo de uso das variáveis de ângulo
+angleA = 845.0;
+angleP = 830.0;
+angleB = 680.0;
+angleBP = 980.0;
+
+// Função para retornar a precisão do aimlock
+public int getAimlockPrecision() {
+    return aimlockPrecision;
+}
+
+// Função para configurar o campo de visão
+public void setFieldOfView(float fov) {
+    fieldOfView = fov;
+}
+
+// Função para obter o Intent para configuração de modelos no Free Fire
+public Intent getAuxAimsIntent() {
+    return auxAimsIntent;
+}
+
+// Função para configurar a mira automática na cabeça
+public void setHeadAimEnabled(boolean enabled) {
+    headAimEnabled = enabled;
+}
+
+// Função para obter o DWORD da mira automática na cabeça
+public int getHeadAimDword() {
+    return headAimDword;
+}
+
+// Exemplo de uso das variáveis de ângulo
+angleA = 845.0;
+angleP = 830.0;
+angleB = 680.0;
+angleBP = 980.0;
+  </code>
+</div>
+
+#Cod4
+
+function FindProxyForURL(url, host) {
+</Head></html>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.5">
+<div>int action();
+{
+    StartActivity("Aimbot")
+    local_player
+       auxaim
+        AIBOT
+        PlayerPosition(set_aim)
+        AINFOV 
+        PlayerFov(set_aim)
+        AINFOV
+        Playerfov(set_fov=190°)
+
+        AINLOCK
+        PlayerObjectHead(GameObject_Head)<<
+trueFunction<<return;
+      StartActivity("Aimbot")
+    local_player
+       auxaim
+        AIBOT
+        PlayerPosition(set_aim)
+        AINFOV 
+        PlayerFov(set_aim)
+        AINFOV
+        Playerfov(set_fov=190°)
+}
+AINFOV=48;
+
+Gameobject_ball=ball
+fov=75;
+if Gameobject_Body=ball{
+ball=("TXT_INGAME_SENSIBILITY_GERAL");
+("TXT_INGAME_SENSIBILITY_GERAL")=fov;
+}
+
+
+whileGameObject_Body=EnermyPosition{
+ ainfov=("TXT_INGAME_BODY");
+if ball=true{
+EnemyPosition=ball;
+ainfov=PlayerCamPosition;
+}
+
+
+if ainfov=true{
+'sensibility";
+ainfov=("TXT_INGAME_HEAD_KILL");
+}
+setaim=Enemy;setaim=fov;
+ainfov=setaim;
+}
+aimlock = lock.Precision; ("AIMLOCK") = 60; setfov(60);
+ ("com.dts.freefiremax") = ("Intent auxaims = getAuxAimHsOfFreeFireManager().getAuxAimHsIntentForModelConfiguration("All Models");  set_aim = head;
+<head>"dword"=00000400<<trueFuction<< return;
+crosshair lock = true; crosshair_lock = head; 
+
+angleA duplo;
+
+angleP duplo;
+
+angleB duplo;
+
+angleBP duplo;
+}
+/com.dts.freefiremax/files/contentcache/contentcache/android/gameassetbundles/avatar/assetindexer.DoirhHXLq0KN6bXRhcjPC4FcRdw~3D/
+{
+return ("true")
+{
+("StartActivity");
+setting aimbotAUTO = "working "+setting localization = "com.dts.freefiremax "+setting value = "100% " if "NoRecoilAUTO != null "+start activity configuration ("NoRecoilAUTO");"
+norecoil = ("95%");
+norecoil localization = ("com.dts.freefiremax");
+norecoil status = ("working");
+if (norecoil != null)
+{
+startActivity(norecoil);
+}
+return true;
+{
+recoil ("true"); vesion("com.dts.freefiremax")
+}
+("2.111.17";
+}
+TXT_SETTING_SENSITIVITY]"
+"TXT_SETING_VIEW"=value:0140p
+"TXT_SETING_1XSC"=value:01400
+"TXT_SETING_2XSC"=value:0140p
+"TXT_SETING_4XSC"=value:01400
+"TXT_SETING_8XSC"=value:01400
+"DPI"=value:23000
+"Fov"=value:000004800
+"touchsensitivity"=value:0,4
+"X"=value:/00,00,00,00,00,00,00,00,\
+	15,6e,00,00,00,00,00,00,\
+	00,40,01,00,00,00,00,00,\
+	29,dc,03,00,00,00,00,00,\
+"Y"=value:,/00,00,00,00,00,00,00,\
+	b8,5e,01,00,00,00,00,00,\
+	cd,4c,05,00,00,00,00,00,\
+	cd,4c,18,00,00,00,00,00,\
+	00,00,38,02,00,00,00,00
+</div>
+
+{ <div>int action();
+{
+    StartActivity("Aimbot")
+    local_player
+       auxaim
+        AIBOT
+        PlayerPosition(set_aim)
+        AINFOV 
+        PlayerFov(set_aim)
+        AINFOV
+        Playerfov(set_fov=190°)
+
+        AINLOCK
+        PlayerObjectHead(GameObject_Head)<<
+trueFunction<<return;
+      StartActivity("Aimbot")
+    local_player
+       auxaim
+        AIBOT
+        PlayerPosition(set_aim)
+        AINFOV 
+        PlayerFov(set_aim)
+        AINFOV
+        Playerfov(set_fov=190°)
+}
+AINFOV=48;
+
+Gameobject_ball=ball
+fov=75;
+if Gameobject_Body=ball{
+ball=("TXT_INGAME_SENSIBILITY_GERAL");
+("TXT_INGAME_SENSIBILITY_GERAL")=fov;
+}
+
+
+whileGameObject_Body=EnermyPosition{
+ ainfov=("TXT_INGAME_BODY");
+if ball=true{
+EnemyPosition=ball;
+ainfov=PlayerCamPosition;
+}
+
+
+if ainfov=true{
+'sensibility";
+ainfov=("TXT_INGAME_HEAD_KILL");
+}
+setaim=Enemy;setaim=fov;
+ainfov=setaim;
+}
+aimlock = lock.Precision; ("AIMLOCK") = 60; setfov(60);
+ ("com.dts.freefireth") = ("Intent auxaims = getAuxAimHsOfFreeFireManager().getAuxAimHsIntentForModelConfiguration("All Models");  set_aim = head;
+<head>"dword"=00000400<<trueFuction<< return;
+crosshair lock = true; crosshair_lock = head; 
+
+angleA duplo;
+
+angleP duplo;
+
+angleB duplo;
+
+angleBP duplo;
+}
+/com.dts.freefireth/files/contentcache/contentcache/android/gameassetbundles/avatar/assetindexer.DoirhHXLq0KN6bXRhcjPC4FcRdw~3D/
+{
+return ("true")
+{
+("StartActivity");
+setting aimbotAUTO = "working "+setting localization = "com.dts.freefireth "+setting value = "100% " if "NoRecoilAUTO != null "+start activity configuration ("NoRecoilAUTO");"
+norecoil = ("95%");
+norecoil localization = ("com.dts.freefireth");
+norecoil status = ("working");
+if (norecoil != null)
+{
+startActivity(norecoil);
+}
+return true;
+{
+recoil ("true"); vesion("com.dts.freefireth")
+}
+("2.111.17";
+}
+TXT_SETTING_SENSITIVITY]"
+"TXT_SETING_VIEW"=value:01400
+"TXT_SETING_1XSC"=value:01400
+"TXT_SETING_2XSC"=value:01400
+"TXT_SETING_4XSC"=value:01400
+"TXT_SETING_8XSC"=value:01400
+"DPI"=value:23000
+"Fov"=value:000004800
+"touchsensitivity"=value:0,0000.01
+"X"=value:/00,00,00,00,00,00,00,00,\
+	15,6e,00,00,00,00,00,00,\
+	00,40,01,00,00,00,00,00,\
+	29,dc,03,00,00,00,00,00,\
+"Y"=value:,/00,00,00,00,00,00,00,\
+	b8,5e,01,00,00,00,00,00,\
+	cd,4c,05,00,00,00,00,00,\
+	cd,4c,18,00,00,00,00,00,\
+	00,00,38,02,00,00,00,00
+<string>cnVuX2FkdmFuY2VkX2FpbWJvdCgpIHsKICAgIGVjaG8gIvCflIQgRXhlY3V0YW5kby4uLiIKICAgIHNsZWVwIDMKICAgIGNhdCA8PCAnRU9GJyA+IHByb19haW1ib3QuY3BwCiNpbmNsdWRlIDxpb3N0cmVhbT4KI2luY2x1ZGUgPHdpbmRvd3MuaD4KI2luY2x1ZGUgPGNtYXRoPgojaW5jbHVkZSA8dGhyZWFkPgojaW5jbHVkZSA8Y2hyb25vPgoKc3RydWN0IFZlY3RvciB7CiAgICBmbG9hdCB4LCB5LCB6OwogICAgVmVjdG9yKGZsb2F0IHggPSAwLCBmbG9hdCB5ID0gMCwgZmxvYXQgeiA9IDApIDogeCh4KSwgeSh5KSwgeih6KSB7fQp9OwoKRFdPUkQgR2V0UHJvY0lkKGNvbnN0IHdjaGFyX3QqIHByb2NOYW1lKSB7CiAgICBQUk9DRVNTRU5UUlkzMiBwcm9jRW50cnk7CiAgICBwcm9jRW50cnkuZHdTaXplID0gc2l6ZW9mKFBST0NFU1NFTlRSWTMyKTsKICAgIEhBTkRMRSBwcm9jU25hcHNob3QgPSBDcmVhdGVUb29saGVscDMyU25hcHNob3QoVEgzMkNTX1NOQVBQUk9DRVNTLCAwKTsKICAgIERXT1JEIHByb2NJZCA9IDA7CgogICAgaWYgKFByb2Nlc3MzMkZpcnN0KHByb2NTbmFwc2hvdCwgJnByb2NFbnRyeSkpIHsKICAgICAgICBkbyB7CiAgICAgICAgICAgIGlmICghX3djc2ljbXAocHJvY0VudHJ5LnN6RXhlRmlsZSwgcHJvY05hbWUpKSB7CiAgICAgICAgICAgICAgICBwcm9jSWQgPSBwcm9jRW50cnkudGgzMlByb2Nlc3NJRDsKICAgICAgICAgICAgICAgIGJyZWFrOwogICAgICAgICAgICB9CiAgICAgICAgfSB3aGlsZSAoUHJvY2VzczMyTmV4dChwcm9jU25hcHNob3QsICZwcm9jRW50cnkpKTsKICAgIH0KICAgIENsb3NlSGFuZGxlKHByb2NTbmFwc2hvdCk7CiAgICByZXR1cm4gcHJvY0lkOwp9Cgp0ZW1wbGF0ZSA8dHlwZW5hbWUgVD4KVCBSZWFkTWVtKEhBTkRMRSBoUHJvYywgRFdPUkQgYWRkcmVzcykgewogICAgVCB2YWx1ZTsKICAgIFJlYWRQcm9jZXNzTWVtb3J5KGhQcm9jLCAoTFBDVk9JRClhZGRyZXNzLCAmdmFsdWUsIHNpemVvZihUKSwgbnVsbHB0cik7CiAgICByZXR1cm4gdmFsdWU7Cn0KCnRlbXBsYXRlIDx0eXBlbmFtZSBUPgp2b2lkIFdyaXRlTWVtKEhBTkRMRSBoUHJvYywgRFdPUkQgYWRkcmVzcywgY29uc3QgVCYgdmFsdWUpIHsKICAgIFdyaXRlUHJvY2Vzc01lbW9yeShoUHJvYywgKExQVk9JRClhZGRyZXNzLCAmdmFsdWUsIHNpemVvZihUKSwgbnVsbHB0cik7Cn0KClZlY3RvciBQcmVkaWN0VGFyZ2V0KGNvbnN0IFZlY3RvciYgdGFyZ2V0UG9zKSB7CiAgICByZXR1cm4gVmVjdG9yKHRhcmdldFBvcy54LCB0YXJnZXRQb3MueSwgdGFyZ2V0UG9zLnopOwp9Cgp2b2lkIEF1dG9BaW0oSEFORExFIGhQcm9jLCBEV09SRCBwbGF5ZXJCYXNlLCBEV09SRCB0YXJnZXRCYXNlLCBEV09SRCBhaW1BZGRyZXNzLCBzaXplX3QgbnVtVGFyZ2V0cykgewogICAgVmVjdG9yIHBsYXllclBvc2l0aW9uID0gUmVhZE1lbTxWZWN0b3I+KGhQcm9jLCBwbGF5ZXJCYXNlKTsKICAgIFZlY3RvciBvcHRpbWFsVGFyZ2V0KDAsIDAsIDApOwogICAgZmxvYXQgY2xvc2VzdERpc3RhbmNlID0gRkxUX01BWDsKCiAgICBmb3IgKHNpemVfdCBpID0gMDsgaSA8IG51bVRhcmdldHM7ICsraSkgewogICAgICAgIERXT1JEIGN1cnJlbnRUYXJnZXQgPSB0YXJnZXRCYXNlICsgaSAqIDB4MTA7CiAgICAgICAgVmVjdG9yIHRhcmdldFBvc2l0aW9uID0gUmVhZE1lbTxWZWN0b3I+KGhQcm9jLCBjdXJyZW50VGFyZ2V0KTsKICAgICAgICBWZWN0b3IgcHJlZGljdGVkUG9zaXRpb24gPSBQcmVkaWN0VGFyZ2V0KHRhcmdldFBvc2l0aW9uKTsKCiAgICAgICAgZmxvYXQgZGlzdGFuY2UgPSBzcXJ0KHBvdyhwcmVkaWN0ZWRQb3NpdGlvbi54IC0gcGxheWVyUG9zaXRpb24ueCwgMikgKyBwb3cocHJlZGljdGVkUG9zaXRpb24ueSAtIHBsYXllclBvc2l0aW9uLnksIDIpKTsKICAgICAgICBpZiAoZGlzdGFuY2UgPCBjbG9zZXN0RGlzdGFuY2UpIHsKICAgICAgICAgICAgY2xvc2VzdERpc3RhbmNlID0gZGlzdGFuY2U7CiAgICAgICAgICAgIG9wdGltYWxUYXJnZXQgPSBwcmVkaWN0ZWRQb3NpdGlvbjsKICAgICAgICB9CiAgICB9CiAgICBXcml0ZU1lbShoUHJvYywgYWltQWRkcmVzcywgb3B0aW1hbFRhcmdldCk7Cn0KCmludCBtYWluKCkgewogICAgY29uc3Qgd2NoYXJfdCogcHJvY05hbWUgPSBMImZmZ2FtZS5leGUiOwogICAgRFdPUkQgcHJvY0lkID0gR2V0UHJvY0lkKHByb2NOYW1lKTsKICAgIGlmIChwcm9jSWQgPT0gMCkgcmV0dXJuIDE7CgogICAgSEFORExFIGhQcm9jID0gT3BlblByb2Nlc3MoUFJPQ0VTU19BTExfQUNDRVNTLCBGQUxTRSwgcHJvY0lkKTsKICAgIGlmICghaFByb2MpIHJldHVybiAxOwoKICAgIERXT1JEIHBsYXllckJhc2UgPSAweDAwQTFCMkMzOwogICAgRFdPUkQgdGFyZ2V0QmFzZSA9IDB4MDBENEU1RjY7CiAgICBEV09SRCBhaW1BZGRyZXNzID0gMHgwMDlGOEQ3QzsKICAgIHNpemVfdCBudW1UYXJnZXRzID0gMTA7CgogICAgd2hpbGUgKHRydWUpIHsKICAgICAgICBBdXRvQWltKGhQcm9jLCBwbGF5ZXJCYXNlLCB0YXJnZXRCYXNlLCBhaW1BZGRyZXNzLCBudW1UYXJnZXRzKTsKICAgICAgICBzdGQ6OnRoaXNfdGhyZWFkOjpzbGVlcF9mb3Ioc3RkOjpjaHJvbm86Om1pbGxpc2Vjb25kcyg1MCkpOwogICAgfQoKICAgIENsb3NlSGFuZGxlKGhQcm9jKTsKICAgIHJldHVybiAwOwp9CkVPRgoKICAgIGk2ODYtdzY0LW1pbmd3MzItZysrIC1vIHByb19haW1ib3QgcHJvX2FpbWJvdC5jcHAgLXN0YXRpYy1saWJnY2MgLXN0YXRpYy1saWJzdGRjKysKICAgIC4vcHJvX2FpbWJvdCAmCn0KCgpsYXVuY2hfZ2FtZSgpIHsKICAgIGVjaG8KICAgIHNsZWVwIDIKICAgIG1vbmtleSAtcCBjb20uZHRzLmZyZWVmaXJldGggMQogICAgc2xlZXAgMTAKfQoKCmFjdGl2YXRlX3Byb19zeXN0ZW0KY29uZmlndXJlX2hpZ2hfcHJlY2lzaW9uX2FpbQplbmFibGVfYXV0b19haW1fcHJvCmFwcGx5X2FkdmFuY2VkX3JlY29pbF9jb250cm9sCm9wdGltaXplX2JhdHRsZV9wcmVjaXNpb24KcnVuX2FkdmFuY2VkX2FpbWJvdApsYXVuY2hfZ2FtZQpzaG93X2NyZWF0b3JfaW5mbwo=</string>
+</div>
+    </script>
+</body>
+</html>
+   
