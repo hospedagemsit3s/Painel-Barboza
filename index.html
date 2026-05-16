@@ -3,139 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fantasensi.ia | A Nova Era do Free Fire</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <title>TremBank - Seu Painel Financeiro</title>
+    <!-- Tailwind CSS para um design moderno e rápido -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Roxo customizado inspirado no minimalismo moderno */
+        .bg-trem { bg-color: #820ad1; }
+        .text-trem { color: #820ad1; }
+        .border-trem { border-color: #820ad1; }
+    </style>
 </head>
-<body>
-    <div class="bg-glow"></div>
-    <div id="root">
-        <div class="container">
-            <div class="content">
-                <header class="header">
-                    <div class="title-wrapper">
-                        <h1 class="main-title">Fantasensi.ia</h1>
-                        <div class="title-glow"></div>
-                    </div>
-                    <p class="subtitle">A NOVA ERA DO FREE FIRE</p>
-                    <div class="badge">
-                        <span class="badge-icon">⚡</span>
-                        <span class="badge-text">Gerador Inteligente de Sensibilidade</span>
-                        <span class="badge-icon">⚡</span>
-                    </div>
-                </header>
+<body class="bg-gray-900 text-gray-100 font-sans min-h-screen flex flex-col justify-between">
 
-                <div class="cards-grid">
-                    <a href="#sensi-famosos" class="card" data-page="sensi-famosos">
-                        <div class="card-inner">
-                            <div class="icon-wrapper">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
-                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                </svg>
-                            </div>
-                            <div class="card-text">
-                                <h3 class="card-title">Sensi dos Famosos</h3>
-                                <p class="card-description">Configurações inspiradas nos pros</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#gerar-sensi" class="card" data-page="gerar-sensi">
-                        <div class="card-inner">
-                            <div class="icon-wrapper">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
-                                    <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"></path>
-                                </svg>
-                            </div>
-                            <div class="card-text">
-                                <h3 class="card-title">Gerar Sensi Aleatória</h3>
-                                <p class="card-description">Crie sua sensi personalizada</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#sensi-arma" class="card" data-page="sensi-arma">
-                        <div class="card-inner">
-                            <div class="icon-wrapper">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <circle cx="12" cy="12" r="6"></circle>
-                                    <circle cx="12" cy="12" r="2"></circle>
-                                </svg>
-                            </div>
-                            <div class="card-text">
-                                <h3 class="card-title">Sensibilidade por Arma</h3>
-                                <p class="card-description">Sensi focada na sua arma favorita</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#dpi-android" class="card" data-page="dpi-android">
-                        <div class="card-inner">
-                            <div class="icon-wrapper">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
-                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                                    <path d="M12 18h.01"></path>
-                                </svg>
-                            </div>
-                            <div class="card-text">
-                                <h3 class="card-title">DPI (Android)</h3>
-                                <p class="card-description">Ajuste de DPI para Android</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#ciclos-iphone" class="card" data-page="ciclos-iphone">
-                        <div class="card-inner">
-                            <div class="icon-wrapper">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
-                                    <path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"></path>
-                                    <path d="M10 2c1 .5 2 2 2 5"></path>
-                                </svg>
-                            </div>
-                            <div class="card-text">
-                                <h3 class="card-title">Ciclos (iPhone)</h3>
-                                <p class="card-description">Geração automática de ciclos</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="#favoritos" class="card" data-page="favoritos">
-                        <div class="card-inner">
-                            <div class="icon-wrapper">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
-                                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
-                                </svg>
-                            </div>
-                            <div class="card-text">
-                                <h3 class="card-title">Favoritos</h3>
-                                <p class="card-description">Suas configurações salvas</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="info-box">
-                    <div class="info-header">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-icon">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M12 16v-4"></path>
-                            <path d="M12 8h.01"></path>
-                        </svg>
-                        <h4 class="info-title">Como funciona?</h4>
-                    </div>
-                    <p class="info-text">Selecione o tipo de configuração, escolha seu estilo de jogo e receba sugestões otimizadas. Salve suas favoritas e teste no jogo!</p>
-                </div>
-
-                <footer class="footer">
-                    <p>© 2026 Fantasensi.ia - Todos os direitos reservados</p>
-                    <p>Desenvolvido para a comunidade Free Fire</p>
-                </footer>
-            </div>
+    <!-- Header / Topo -->
+    <header class="p-5 border-b border-gray-800 flex justify-between items-center bg-gray-950">
+        <div class="flex items-center gap-2">
+            <i class="fa-solid fa-train text-3xl text-[#820ad1]"></i>
+            <span class="text-2xl font-bold tracking-wider text-white">Trem<span class="text-[#820ad1]">Bank</span></span>
         </div>
-    </div>
-    <script src="script.js"></script>
+        <div class="text-sm bg-gray-800 px-3 py-1.5 rounded-full text-gray-400 border border-gray-700">
+            Olá, <span class="text-white font-semibold">User</span>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="max-w-4xl w-full mx-auto p-4 md:p-6 space-y-6 flex-grow">
+        
+        <!-- Bloco de Saldo -->
+        <section class="bg-gray-950 border border-gray-800 p-6 rounded-3xl shadow-xl relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-2 h-full bg-[#820ad1]"></div>
+            <div class="flex justify-between items-center mb-2">
+                <h2 class="text-gray-400 font-medium">Saldo disponível</h2>
+                <button onclick="toggleSaldo()" class="text-gray-400 hover:text-white transition">
+                    <i id="eye-icon" class="fa-solid fa-eye-slash text-lg"></i>
+                </button>
+            </div>
+            <div class="text-3xl md:text-4xl font-bold tracking-tight my-2">
+                R$ <span id="saldo-txt" class="blur-md select-none transition-all duration-300">5.420,50</span>
+            </div>
+            <p class="text-sm text-gray-500 mt-1">Limite diário de PIX disponível: R$ 3.000,00</p>
+        </section>
+
+        <!-- Grade de Ferramentas (Gráfico e PIX) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Área do PIX -->
+            <section class="bg-gray-950 border border-gray-800 p-6 rounded-3xl flex flex-col justify-between">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 flex items-center gap-2 text-white">
+                        <i class="fa-brands fa-pix text-[#820ad1]"></i> Enviar PIX
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-xs text-gray-400 mb-1">Chave PIX (CPF, E-mail ou Telefone)</label>
+                            <input type="text" id="pix-chave" placeholder="Insira a chave de destino" 
+                                class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-[#820ad1] transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs text-gray-400 mb-1">Valor (R$)</label>
+                            <input type="number" id="pix-valor" placeholder="0,00" step="0.01" min="0.01"
+                                class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-[#820ad1] transition">
+                        </div>
+                    </div>
+                </div>
+                <button onclick="executarPix()" class="w-full mt-6 bg-[#820ad1] hover:bg-[#9626e8] text-white font-semibold py-3 rounded-xl transition duration-200 shadow-lg shadow-[#820ad1]/20">
+                    Confirmar Transferência
+                </button>
+            </section>
+
+            <!-- Gráfico de Gastos / Distribuição (Simulado em HTML/CSS) -->
+            <section class="bg-gray-950 border border-gray-800 p-6 rounded-3xl">
+                <h3 class="text-lg font-semibold mb-4 flex items-center gap-2 text-white">
+                    <i class="fa-solid fa-chart-pie text-[#820ad1]"></i> Distribuição de Gastos
+                </h3>
+                <div class="space-y-4 my-auto pt-2">
+                    <!-- Barra de Mercado -->
+                    <div>
+                        <div class="flex justify-between text-xs mb-1">
+                            <span class="text-gray-400">Supermercado</span>
+                            <span class="text-white font-medium">45%</span>
+                        </div>
+                        <div class="w-full bg-gray-900 h-2.5 rounded-full overflow-hidden">
+                            <div class="bg-[#820ad1] h-full rounded-full" style="width: 45%"></div>
+                        </div>
+                    </div>
+                    <!-- Barra de Jogos/Lazer -->
+                    <div>
+                        <div class="flex justify-between text-xs mb-1">
+                            <span class="text-gray-400">Jogos & Lazer</span>
+                            <span class="text-white font-medium">35%</span>
+                        </div>
+                        <div class="w-full bg-gray-900 h-2.5 rounded-full overflow-hidden">
+                            <div class="bg-purple-500 h-full rounded-full" style="width: 35%"></div>
+                        </div>
+                    </div>
+                    <!-- Barra de Outros -->
+                    <div>
+                        <div class="flex justify-between text-xs mb-1">
+                            <span class="text-gray-400">Outros</span>
+                            <span class="text-white font-medium">20%</span>
+                        </div>
+                        <div class="w-full bg-gray-900 h-2.5 rounded-full overflow-hidden">
+                            <div class="bg-gray-700 h-full rounded-full" style="width: 20%"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Histórico / Extrato -->
+        <section class="bg-gray-950 border border-gray-800 p-6 rounded-3xl">
+            <h3 class="text-lg font-semibold mb-4 text-white">Histórico de Transações</h3>
+            <div id="extrato-lista" class="space-y-4 max-h-60 overflow-y-auto pr-2">
+                <!-- Transação Padrão 1 -->
+                <div class="flex justify-between items-center border-b border-gray-900 pb-3">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-green-950/50 flex items-center justify-center text-green-400 text-sm">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-medium text-white">PIX Recebido</p>
+                            <p class="text-xs text-gray-500">Ontem às 18:24</p>
+                        </div>
+                    </div>
+                    <span class="text-sm font-semibold text-green-400">+ R$ 150,00</span>
+                </div>
+                <!-- Transação Padrão 2 -->
+                <div class="flex justify-between items-center border-b border-gray-900 pb-3">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-gray-400 text-sm">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-medium text-white">Compra no Débito</p>
+                            <p class="text-xs text-gray-500">04 de Mai às 14:10</p>
+                        </div>
+                    </div>
+                    <span class="text-sm font-semibold text-gray-300">- R$ 42,90</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-4 text-center text-xs text-gray-600 border-t border-gray-900 bg-gray-950">
+        &copy; 2026 TremBank App. Feito exclusivamente para testes de front-end.
+    </footer>
+
+    <!-- Lógica em JavaScript -->
+    <script>
+        let saldoAtual = 5420.50;
+        let saldoVisivel = false;
+
+        // Função para ocultar/mostrar saldo (efeito borrão)
+        function toggleSaldo() {
+            const saldoTxt = document.getElementById('saldo-txt');
+            const eyeIcon = document.getElementById('eye-icon');
+            
+            saldoVisivel = !saldoVisivel;
+            
+            if (saldoVisivel) {
+                saldoTxt.classList.remove('blur-md');
+                eyeIcon.classList.remove('fa-eye-slash');
+                eyeIcon.classList.add('fa-eye');
+            } else {
+                saldoTxt.classList.add('blur-md');
+                eyeIcon.classList.remove('fa-eye');
+                eyeIcon.classList.add('fa-eye-slash');
+            }
+        }
+
+        // Função para formatar moeda
+        function formatarMoeda(valor) {
+            return valor.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        }
+
+        // Função para simular o envio do PIX
+        function ejecutarPix() {
+            const chaveInput = document.getElementById('pix-chave');
+            const valorInput = document.getElementById('pix-valor');
+            
+            const chave = chaveInput.value.trim();
+            const valor = parseFloat(valorInput.value);
+
+            // Validações básicas
+            if (!chave) {
+                alert('Por favor, digite uma chave PIX válida.');
+                return;
+            }
+            if (isNaN(valor) || valor <= 0) {
+                alert('Digite um valor maior que zero para transferir.');
+                return;
+            }
+            if (valor > saldoAtual) {
+                alert('Saldo insuficiente para completar essa transação.');
+                return;
+            }
+
+            // Subtrai o valor do saldo interno
+            saldoAtual -= valor;
+            document.getElementById('saldo-txt').innerText = formatarMoeda(saldoAtual);
+
+            // Adiciona a transação no topo do extrato
+            const lista = document.getElementById('extrato-lista');
+            const novaTransacao = document.createElement('div');
+            novaTransacao.className = "flex justify-between items-center border-b border-gray-900 pb-3 animation-pulse";
+            
+            const agora = new Date();
+            const horaFormatada = agora.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+
+            novaTransacao.innerHTML = `
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-red-950/50 flex items-center justify-center text-red-400 text-sm">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium text-white">PIX enviado para ${chave}</p>
+                        <p class="text-xs text-gray-500">Hoje às ${horaFormatada}</p>
+                    </div>
+                </div>
+                <span class="text-sm font-semibold text-red-400">- R$ ${formatarMoeda(valor)}</span>
+            `;
+
+            // Insere no início da lista de histórico
+            lista.insertBefore(novaTransacao, lista.firstChild);
+
+            // Limpa os campos do formulário
+            chaveInput.value = '';
+            valorInput.value = '';
+
+            alert(`PIX de R$ ${formatarMoeda(valor)} enviado com sucesso!`);
+        }
+    </script>
 </body>
 </html>
